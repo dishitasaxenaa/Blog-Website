@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="/header.css">
+  <link rel="stylesheet" href="/userProfile.css">
+</head>
+<body>
+    <%- include("header.ejs") %>;
+    <div class="mainContainer">
+        <div class="content">
+            <div class="buttons">
+                <a class="myBlogs" href="/myBlogs">My Blogs</a>
+                <a class="favs">Favourites</a>
+                <a class="saved">Saved</a>
+            </div>
+    
+            <div class="userDetails">
+                <div class="stats">
+                  <div><span>00</span><br>Blogs</div>
+                  <div><span>00</span><br>Following</div>
+                  <div><span>00</span><br>Followers</div>
+                </div>
+        
+                <div class="inputFields">
+                    <input type="text" name="username" value="<%= currUser.username %>">
+                    <input type="text" name="name" value="<%= currUser.name %>">
+                    <input type="email" name="email" value="<%= currUser.email %>">
+                </div>
+            </div>
+        </div>
+
+        <div class="profilePhotoBox">
+            <div class="profileContainer">
+            <div class="profileContainer2">
+
+            </div>
+        </div>
+        </div>       
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.navBar{
+    background-color: #ffa114;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+ margin: 6px;
+ padding: 4px;
+ font-family: "Roboto";
+ height: 30px;
+ width: auto;
+ background-color: #ffa114;
+ color: white;
+ border: none;
+ cursor: pointer;
+ font-size: 1.2rem;
+}
+
+.profilePhoto{
+    margin: 6px;
+    margin-right: 20px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blogs</title>
+    <link rel="stylesheet" href="myBlogs.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <%- include("header.ejs") %>
+
+    <div class="blogContainer">
+        <div class="heading"><h1>My Blogs</h1></div>
+        <div class="blogBoxContainer">
+            <% if(userBlogs.length === 0) { %>
+                <p>No Blogs Currently.</p>
+            <% } else { %>
+                <% userBlogs.forEach(blog => { %>
+                    <div class="blogBox">
+                        <h1><%= blog.title %></h1>
+                        <p><%= blog.bodyText %></p>
+                        <i onclick="deleteBlog('<%= blog.title %>')" class="fa-solid fa-trash" style="cursor:pointer;"></i>
+                    </div>
+                <% }); %>
+            <% } %>
+        </div>
+        <a class="plus" href="/createyourpost">+</a>
+    </div>
+
+    <script>
+        function deleteBlog(title) {
+            fetch(`/deleteblog/${encodeURIComponent(title)}`, {
+                method: 'DELETE'
+            })
+            .then(res => res.json())
+            .then(data => {
+                if(data.success){
+                    location.reload();
+                } else {
+                    alert("Could not delete blog: " + data.message);
+                }
+            })
+            .catch(err => console.error(err));
+        }
+    </script>
+</body>
+</html>

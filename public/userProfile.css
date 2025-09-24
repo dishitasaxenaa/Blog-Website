@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Bitcount:wght@100..900&family=Dancing+Script:wght@400..700&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fdf3c0;
+}
+
+.mainContainer{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content{
+    height: 60vh;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+.buttons{
+    
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+a{
+    background-color: #ffa114;
+    padding: 10px 15px;
+    margin: 0px 15px;
+    margin-left: 0px;
+    width: 140px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Roboto Mono";
+    color: white;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+.userDetails{
+    height: 75%;
+    width: 100%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  justify-self: left;
+  align-items: center;
+  align-self: first baseline;
+  width: 55%;
+  font-family: "Roboto Mono";
+  color: #ffa114;
+  text-align: center;
+  margin-bottom : 20px;
+}
+
+.stats span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.inputFields{
+    margin-top: 40px;
+}
+
+input {
+  font-family: "Roboto Mono";
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 15px 0;
+  padding: 5px 0;
+  background-color: #fdf3c0;
+  color: #ffa114;
+  border: none;
+  border-bottom: 2px solid #ffa114; 
+  outline: none;
+}
+
+.profilePhotoBox{
+    height: 60vh;
+    width: 30vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.profileContainer{
+    height: 360px;
+    width: 360px;
+    background-color: #ffa114;
+    border-radius: 50%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileContainer2{
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+

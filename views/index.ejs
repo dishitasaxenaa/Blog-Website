@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scriptly</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/header.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <%- include("header.ejs") %>  <!-- navbar injected here -->
+      
+    <div class="hero">
+        <div class="container">
+            <div class="heading">
+                <div class="name">Scriptly</div>
+                <div class="tagLine">IDEAS IN MOTION</div>
+                <button class="explore">LET'S EXPLORE!</button>
+            </div>
+        </div>
+        <div class="bubbleContainer">
+            <div class="bubbleContainer">
+                <div class="bubble b1"></div>
+                <div class="bubble b2"></div>
+                <div class="bubble b3"></div>
+                <div class="bubble b4"></div>
+                <div class="bubble b5"></div>
+                <div class="bubble b6"></div>
+                <div class="bubble b7"></div>
+                <div class="bubble b8"></div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="blogSection">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+    </div>
+
+    <div id="about" class="aboutSection">
+        <div class="photo">
+            <div class="image"></div>
+        </div>
+        <div class="about-us">
+            <h1>ABOUT US</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste illo suscipit sunt molestiae eius adipisci dolorum, error reiciendis, quam quidem iure deleniti ipsum magni velit est labore quia nobis inventore accusantium neque obcaecati provident tempora omnis veritatis. Quaerat, labore amet, qui deserunt sint dolores illum ab impedit itaque temporibus doloremque.</p>
+        </div>
+    </div>
+
+    <div id="contact" class="contactSection">
+        <div class="contactDetails">
+            <div class="numberDetails">
+                <h1>CONTACT US</h1>
+                <span>(+91) XXXXXXXXX</span>
+                <br>
+                <span>(+91) XXXXXXXXX</span>
+            </div>
+            <div class="socialDetails">
+                <h1>GET SOCIALS</h1>
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-instagram icon"></i>
+            </div>
+        </div>
+        <div class="userInput">
+           <h1>WE WOULD LOVE TO HEAR FROM YOU!</h1>
+           <div class="inputs">
+                <div class="inputField inputName">Name : <br>
+                 <input type="text">
+                </div>
+                <div class="inputField inputEmail">Email : <br>
+                 <input type="text">
+                </div>
+                <div class="inputField inputMessage">Message : <br>
+                 <input type="text">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script type="module" src="/blogDisplay.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<div class="navBar"> 
+  <a href="/" class="btn">Home</a>
+  <a href="/search" class="btn">Search</a>
+  <a href="/#about" class="btn">About Us</a>
+  <a href="/#contact" class="btn">Contact Us</a>
+  <% if(!currUser){ %>
+  <a href="/login" class="profilePhoto"></a>
+  <% } else{ %>
+  <a href="/user" class="profilePhoto"></a>
+  <% } %>
+</div>
