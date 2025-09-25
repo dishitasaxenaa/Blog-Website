@@ -19,12 +19,19 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
+    console.log(currUser);
     res.render("index.ejs", {currUser});
 })
 
 app.get("/user", (req, res) => {
-    res.render("userProfile.ejs", {currUser});
-})
+    let noOfBlogs = 0;
+    blogs.forEach(blog => {
+        if (blog.author === currUser.name) {
+            noOfBlogs++;
+        }
+    });
+    res.render("userProfile.ejs", { currUser, noOfBlogs });
+});
 
 app.get("/api/blogs", (req, res) => {
   res.json(blogs);

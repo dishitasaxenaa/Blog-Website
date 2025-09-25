@@ -43,6 +43,11 @@ const blogs = [
     "author": "Dishita Saxena",
     "title": "The Chatbot You Need",
     "bodyText": "This chatbot is designed to help you with questions, ideas, or just a quick fun interaction anytime you need."
+  },
+  {
+    "author": "Dishita Saxena",
+    "title": "The Joy of Building Projects",
+    "bodyText": "Building projects is one of the best ways to truly learn. Unlike theory, projects push you to solve real problems and face challenges you didn’t expect. Every bug becomes a lesson, and every feature you finish feels rewarding. Web development, especially, lets you see instant results of your effort. The best part is sharing your creation with others and watching it actually help someone. That’s when code feels alive."
   }
 ];
 

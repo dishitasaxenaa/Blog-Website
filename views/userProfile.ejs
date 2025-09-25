@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/userProfile.css">
 </head>
 <body>
-    <%- include("header.ejs") %>;
+    <%- include("header.ejs") %>
     <div class="mainContainer">
         <div class="content">
             <div class="buttons">
@@ -19,15 +19,15 @@
     
             <div class="userDetails">
                 <div class="stats">
-                  <div><span>00</span><br>Blogs</div>
+                  <div><span><%= noOfBlogs %></span><br>Blogs</div>
                   <div><span>00</span><br>Following</div>
                   <div><span>00</span><br>Followers</div>
                 </div>
         
                 <div class="inputFields">
-                    <input type="text" name="username" value="<%= currUser.username %>">
-                    <input type="text" name="name" value="<%= currUser.name %>">
-                    <input type="email" name="email" value="<%= currUser.email %>">
+                    <input type="text" name="username" value="Username : <%= currUser.username %>">
+                    <input type="text" name="name" value="Name : <%= currUser.name %>">
+                    <input type="email" name="email" value="Email : <%= currUser.email %>">
                 </div>
             </div>
         </div>

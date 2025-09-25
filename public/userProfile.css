@@ -26,14 +26,14 @@ body{
     margin-left: 5vw;
 }
 
-.buttons{
+.mainContainer .buttons{
     
     margin-top: 100px;
     margin-bottom: 50px;
     width: 100%;
 }
 
-a{
+.mainContainer a{
     background-color: #ffa114;
     padding: 10px 15px;
     margin: 0px 15px;
@@ -113,5 +113,7 @@ input {
     background-color: white;
     border-radius: 50%;
     z-index: 1;
+    background-image: url(userIcon.png);
+    background-size: contain;
 }
 
