@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Dancing+Script:wght@400..700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Bitcount:wght@100..900&family=Dancing+Script:wght@400..700&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Bitcount:wght@100..900&family=Dancing+Script:wght@400..700&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Bitcount:wght@100..900&family=Dancing+Script:wght@400..700&family=Lexend+Mega:wght@100..900&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 *{
     padding : 0;
@@ -11,7 +13,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #fdf3c0;
+    background-color: #dadcdc;
     overflow-x: hidden;
 }
 
@@ -23,7 +25,7 @@ body{
 .container{
     display: flex;
     height: 80vh;
-    width: 60vw;
+    width: 45vw;
     flex-wrap: wrap;
     justify-content: right;
     align-items:center;
@@ -38,60 +40,73 @@ body{
 .name{
     height: 10%;
     font-family: "Lobster";
-    font-size: 3rem;
-    color: #ffa114;
+    font-size: 4rem;
+    color: #1f2937;
     font-weight: 100;
 }
 
 .tagLine{
     height: 40%;
-    font-family: "Andika";
-    font-size: 8rem;
-    color: #ffa114;
-    font-weight: 900;
+    font-family: "Sansation", sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    color: #3c444e;
     line-height: 1;
+    margin: 15px 0px;
 }
 
 .explore{
-    background-color: #ffd864;
+    background-color: #3c444e;
     height: 5rem;
     width: 13rem;
     margin: 5px;
     font-size: 1.2rem;
-    color: #ffa114;
+    color: white;
     font-family: "Roboto Mono";
-    border: 4px solid white;
+    border: 4px solid #a1a3a9;
     cursor: pointer;
     font-weight: 700;
 }
 
 .explore:hover{
-    border: 2px solid #ffa114;
+    background-color: #283046;
 }
 
 .bubbleContainer {
   height: 80vh;
-  width: 40vw;
+  width: 55vw;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Add animation to all bubbles */
 .bubble {
   border-radius: 50%;
-  background-color: #ffa114;
+  background: radial-gradient(circle, #546893 30%, #111827 100%);
   position: absolute;
+  animation: float 4s ease-in-out infinite;
 }
 
-.b1 { border: 5px solid white; width: 130px; height: 130px; top: 20%; right: 5%; }
-.b2 { border: 5px solid white; width: 190px;  height: 190px;  top: 12%;  left: 35%;  }
-.b3 { border: 5px solid white; width: 150px; height: 150px; top: 40%; left: 10%; }
-.b4 { border: 5px solid white; width: 230px; height: 230px; bottom: 0%; left: 0%;  }
-.b5 { border: 5px solid white; width: 250px; height: 250px; bottom: 22%; right: 15%; }
-.b6 { border: 5px solid white; width: 90px;  height: 90px;  bottom: 5%; left: 50%; }
-.b7 { border: 5px solid white; width: 120px;  height: 120px;  bottom: 0%;  right: 5%;  }
-.b8 { border: 5px solid white; width: 60px;  height: 60px;  top: 45%;  right: 3%;  }
+/* Customize speed & delay for each bubble so they look natural */
+.b1 { border: 5px solid white; width: 130px; height: 130px; top: 20%; right: 5%; animation-duration: 7s; animation-delay: 0s; }
+.b2 { border: 5px solid white; width: 190px; height: 190px; top: 12%; left: 35%; animation-duration: 7s; animation-delay: 2s; }
+.b3 { border: 5px solid white; width: 150px; height: 150px; top: 40%; left: 10%; animation-duration: 5s; animation-delay: 1s; }
+.b4 { border: 5px solid white; width: 230px; height: 230px; bottom: 0%; left: 0%; animation-duration: 8s; animation-delay: 3s; }
+.b5 { border: 5px solid white; width: 250px; height: 250px; bottom: 22%; right: 15%; animation-duration: 9s; animation-delay: 4s; }
+.b6 { border: 5px solid white; width: 90px; height: 90px; bottom: 5%; left: 50%; animation-duration: 5s; animation-delay: 2s; }
+.b7 { border: 5px solid white; width: 120px; height: 120px; bottom: 0%; right: 5%; animation-duration: 5s; animation-delay: 1s; }
+.b8 { border: 5px solid white; width: 60px; height: 60px; top: 45%; right: 3%; animation-duration: 7s; animation-delay: 0s; }
+
+/* Keyframes for floating */
+@keyframes float {
+  0%   { transform: translateY(0px) translateX(0px); }
+  25%  { transform: translateY(-20px) translateX(10px); }
+  50%  { transform: translateY(0px) translateX(20px); }
+  75%  { transform: translateY(20px) translateX(-10px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
 
 .blogSection{
     height: auto;
@@ -103,18 +118,25 @@ body{
     margin: 100px 0px;
 }
 
-.box{
+.box {
     height: 130px;
     width: 270px;
     margin: 20px;
     padding: 20px;
-    border: 2px solid black;
-    background-color: white;
+    border: 2px solid #E5E7EB;
+    background-color: #FFFFFF;
     border-radius: 20px;
-    box-shadow: 5px 5px 2px 2px black;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
     font-family: sans-serif;
     cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.box:hover {
+    transform: scale(1.15);
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.3); 
+}
+
 
 .box .title{
     font-size: 1.2rem;
@@ -143,7 +165,7 @@ body{
 .aboutSection{
     height: 85vh;
     width: 100vw;
-    background-color: #ffd864;
+    background-color: #8e8f90;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -162,7 +184,7 @@ body{
 .image{
     width: 90%;
     height: 90%;
-    background-image: url("/cat.png");
+    background-image: url("/aboutUs.jpg");
     background-size: cover;
     border-radius: 50px;
 }
@@ -172,7 +194,7 @@ body{
     height: 50%;
     font-family: "Roboto Mono";
     text-align: left;
-    color: #193f56;
+    color: #F9FAFB;
 }
 
 h1{
@@ -188,11 +210,11 @@ p{
 .contactSection{
     height: 90vh;
     width: 100vw;
-    background-color: #ffa114;
+    background-color: #dadcdc;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fdf3c0;
+    color: #1f2937;
     font-family: "Roboto Mono";
 }
 
@@ -238,13 +260,13 @@ i{
 
 input{
     width: 95%;
-    background-color: #fdf3c0;
+    background-color: #abacad;
     border: none;
-    height: 3rem;
+    height: 2rem;
     border-radius: 20px;
-    font-size: 1.2rem;
-    color: #ffa114;
-    padding: 5px;
+    font-size: 1.4rem;
+    color: black;
+    padding: 15px;
 }
 
 .inputField{

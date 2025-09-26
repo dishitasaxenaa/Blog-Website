@@ -47,7 +47,7 @@ app.get("/signup", (req, res) => {
 })
 
 app.get("/login", (req, res) => {
-    res.render("login.ejs");
+    res.render("login.ejs", {currUser});
 })
 
 app.get("/myBlogs", (req, res) => {

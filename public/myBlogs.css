@@ -8,7 +8,7 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: #ffa114;
+    background-color: #dadcdc;
 }
 
 .blogContainer{
@@ -20,10 +20,10 @@ body{
 .heading{
     font-size: 25px;
     font-family: "Open Sans";
-    color: #fdf3c0;
+    color: #3c444e;
     width: 25%;
     height: 85px;
-    border: 2px solid #fdf3c0;
+    border: 2px solid #3c444e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,23 +31,34 @@ body{
 }
 
 .blogBox{
-    height: 200px;
+    height: 180px;
     width: 350px;
-    background-color: #ffbd59;
+    background-color: #3c444e;
     border-radius: 20px;
     margin: 0px 40px;
     margin-left: 0px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blogBox:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.3); 
+}
+
+.title{
+    height: auto;
 }
 
 .blogBox p{
     display: -webkit-box;
-    -webkit-line-clamp: 4; 
+    -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 100%;
 }
 
 .blogBox i{
@@ -57,22 +68,23 @@ body{
     justify-content: center;
     align-items: center;
     margin-left: auto;
+    margin-top: auto;
     cursor: pointer;
+    color: #e46a6a;
 }
 
 .blogBoxContainer{
     font-family: "Open Sans";
-    color: #fdf3c0;
+    color: #dadcdc;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
-    
 }
 
 .plus{
     font-size: 2rem;
-    background-color: #fdf3c0;
+    background-color: #3c444e;
     display: block;
     display: flex;
     justify-content: center;
@@ -85,8 +97,9 @@ body{
     margin: 40px;
     font-weight: 900;
     cursor: pointer;
+    color: #dadcdc;
 }
 
 .plus:hover{
-    border: 2px solid #ba750e;
+    background-color: #272c33;
 }

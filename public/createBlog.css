@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #ffd864;
+    background-color: #dadcdc;
 }
 
 .main-container{
@@ -46,15 +46,16 @@ form{
 
 input{
     width: 99%;
-    background-color: #fdf3c0;
+    background-color: #808b98;
     border: none;
     height: 2rem;
     border-radius: 20px;
-    color: black;
+    color: 193f56;
     margin: 10px 0px;
     padding: 15px;
     font-family: "Roboto Mono";
     font-size: 1rem;
+    color: white;
 }
 
 .inputName{
@@ -73,7 +74,7 @@ input{
 textarea{
     width: 97%;
     height: 8rem;
-    background-color: #fdf3c0;
+    background-color: #808b98;
     border-radius: 20px;
     padding: 15px;
     margin-bottom: 20px;
@@ -84,14 +85,15 @@ textarea{
     line-height: 1.5;   
     border: none;
     margin-top: 30px;
+    color: white;
 }
 
 .postBtn{
-    background-color: #ffa114;
+    background-color: #193f56;
     height: 3rem;
     width: 5.5rem;
     border-radius: 20px;
-    color: #fdf3c0;
+    color: #dadada;
     font-size: 1.1rem;
     border: none;
     font-family: "Roboto Mono";
@@ -99,5 +101,5 @@ textarea{
 }
 
 .postBtn:hover{
-    border: 2px solid #fdf3c0;
+    background-color: #102939;
 }

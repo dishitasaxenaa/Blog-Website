@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #fdf3c0;
+    background-color: #abacad;
 }
 
 .mainContainer{
@@ -34,7 +34,7 @@ body{
 }
 
 .mainContainer a{
-    background-color: #ffa114;
+    background-color: #193f56;
     padding: 10px 15px;
     margin: 0px 15px;
     margin-left: 0px;
@@ -61,7 +61,7 @@ body{
   align-self: first baseline;
   width: 55%;
   font-family: "Roboto Mono";
-  color: #ffa114;
+  color: #193f56;
   text-align: center;
   margin-bottom : 20px;
 }
@@ -81,10 +81,10 @@ input {
   width: 80%;
   margin: 15px 0;
   padding: 5px 0;
-  background-color: #fdf3c0;
-  color: #ffa114;
+  background-color: #abacad;
+  color: #193f56;
   border: none;
-  border-bottom: 2px solid #ffa114; 
+  border-bottom: 2px solid #193f56; 
   outline: none;
 }
 
@@ -99,7 +99,7 @@ input {
 .profileContainer{
     height: 360px;
     width: 360px;
-    background-color: #ffa114;
+    background-color: #193f56;
     border-radius: 50%;
     z-index: 0;
     display: flex;

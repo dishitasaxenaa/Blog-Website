@@ -41,13 +41,13 @@ const blogs = [
   },
   {
     "author": "Dishita Saxena",
-    "title": "The Chatbot You Need",
-    "bodyText": "This chatbot is designed to help you with questions, ideas, or just a quick fun interaction anytime you need."
+    "title": "The Joy of Building Projects",
+    "bodyText": "Building projects is one of the best ways to truly learn. Unlike theory, projects push you to solve real problems and face challenges you didn’t expect. Every bug becomes a lesson, and every feature you finish feels rewarding. Web development, especially, lets you see instant results of your effort. The best part is sharing your creation with others and watching it actually help someone. That’s when code feels alive."
   },
   {
     "author": "Dishita Saxena",
-    "title": "The Joy of Building Projects",
-    "bodyText": "Building projects is one of the best ways to truly learn. Unlike theory, projects push you to solve real problems and face challenges you didn’t expect. Every bug becomes a lesson, and every feature you finish feels rewarding. Web development, especially, lets you see instant results of your effort. The best part is sharing your creation with others and watching it actually help someone. That’s when code feels alive."
+    "title": "The Beauty of Slowing Down",
+    "bodyText": "Life often feels like a race where everyone is rushing toward something—success, recognition, or the next big milestone. In the middle of this rush, it’s easy to forget to pause and breathe. Slowing down doesn’t mean losing pace; it means appreciating the little moments that give life its true meaning. Whether it’s enjoying a cup of coffee, spending time with loved ones, or simply watching the sunset, these pauses bring balance. After all, the journey matters just as much as the destination."
   }
 ];
 

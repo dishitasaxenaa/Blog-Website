@@ -52,6 +52,12 @@ const userList = [
     "name": "Rimjhim Maurya",
     "email": "rimjhim@gmail.com",
     "password": "rimjhimrimjhim"
+  },
+  {
+    "username": "fairygupta",
+    "name": "Fairy Gupta",
+    "email": "faity@gmail.com",
+    "password": "fairy"
   }
 ];
 

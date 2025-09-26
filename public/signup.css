@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #ffd864;
+    background-color: #abacad;
 }
 
 .page{
@@ -28,7 +28,7 @@ body{
 }
 
 button{
-    background-color: #fdf3c0;
+    background-color: #f1f2f4;
     height: 2.2rem;
     width: 6rem;
     padding: 10px;
@@ -57,7 +57,7 @@ button:hover{
 
 input{
     width: 100%;
-    background-color: #fdf3c0;
+    background-color: #f1f2f4;
     border: none;
     height: 2%;
     border-radius: 20px;
